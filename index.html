@@ -32,7 +32,8 @@
         text-align: center;
         background-image: url(hero.jpg);
         background-size: 100%;
-        padding-bottom: 600px;
+        padding-bottom: 450px;
+        padding-top: 10px;
         background-repeat: no-repeat;
     }
     .p1{
@@ -52,8 +53,8 @@
     }
 .services{
     display: flex;
-    padding: 10px 20px;
     margin-left: 10px;
+    margin-bottom: 5%;
     text-align: center;
 }
 .mens-haircut, .nails-cut, .body-massage{   
@@ -73,39 +74,33 @@ h2{
     padding: 20px;
     color: aliceblue;
     }
-.fotr img{
+.fotr-img{
     margin-top: 20px;
-
-    float: left;
+    float: auto;
 }
 .fotr p{
-    text-align: end;
+    text-align: auto;
+    float: right;
 }
-@media only screen and (max-width:800px) {
-    .p1{
-        display:  grid;
-    }
+@media only screen and (max-width:768px) {
     .services{
-        display: grid;      
+        display: grid;
+        grid-template-columns: auto;      
         }
     .nav1{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 0%;
+        justify-content: center;       
+ 
     }
-}
-@media only screen and (max-width:500px) {
-    .p1{
-        display: grid;
-    }
-    .services{
-        display: grid;      
-        }
-    .nav1{
-        display: grid;
-        grid-template-columns: auto;
-    }
-}
-
+    .fotr{
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    justify-items: center;    
+}                                         }
 </style>
 <body>
     <header>
